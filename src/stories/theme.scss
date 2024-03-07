@@ -1,0 +1,144 @@
+//Color Values
+
+$black-0: #FFFFFF;
+$black-100: #C7C8CC;
+$black-20: #F0F0F1;
+$black-200: #989AA4;
+$black-400: #555763;
+$black-50: #DEDFE1;
+$black-600: #292B37;
+$black-800: #0D122A;
+$blue-100: #E8F7FD;
+$blue-200: #18B1E7;
+$burgundy-100: #D8A9BC;
+$burgundy-200: #DF0C64;
+$burgundy-400: #A00142;
+$burgundy-50: #FFD6E7;
+$burgundy-600: #800035;
+$burgundy-800: #5F0028;
+$green-100: #CCFBD0;
+$green-200: #0DBC62;
+$navy-0: #FFFFFF;
+$navy-100: #EFF0FF;
+$navy-150: #E4E6FF;
+$navy-200: #5E66DA;
+$navy-300: #888BB9;
+$navy-400: #3C418C;
+$navy-50: #F8F8FF;
+$navy-600: #0A1063;
+$transparent-black-25: rgba(13, 18, 42, 0.25);
+$yellow-100: #FFFACC;
+$yellow-200: #FFD800;
+$orange-100:#FFE3C9;
+$purple-100:#F0E4FF;
+$pink-100: #FFDFDF; 
+
+
+//==================================================================================//
+
+// Backgrounds
+$primary-button-static-bg: $navy-400;
+$primary-button-hover-bg: $navy-600;
+$primary-button-pressed-bg: $navy-600;
+$secondary-button-static-bg: $black-0;
+$secondary-button-shadow-hover-bg: $navy-100;
+$secondary-button-shadow-pressed-bg: $navy-150;
+$disabled-button-bg: $black-20;
+$danger-button-static-bg: $burgundy-400;
+$danger-button-hover-bg: $burgundy-600;
+$danger-button-pressed-bg: $burgundy-800;
+$component-bg: $black-0;
+$portal-page-bg: $navy-50;
+$progress-bar-bg: $black-50;
+$table-cell-hover-bg: $navy-50;
+$avatar-bg: $yellow-200;
+$tooltip-bg: $black-600;
+$filter-static-bg: $black-50;
+$filter-hover-bg: $navy-150;
+$error-bg: $burgundy-50;
+$nav-badge-bg: $navy-400;
+$nav-bg: $burgundy-800;
+$nav-active-hover-bg: $burgundy-400;
+$nav-pressed-bg: $burgundy-200;
+$excel-bg: $green-200;
+$pdf-bg: $burgundy-600;
+$jpeg-bg: $yellow-200;
+$toggle-off-bg: $black-50;
+$component-swap-bg: $black-50;
+$tag-green-bg: $green-100;
+$tag-blue-bg: $blue-100;
+$tag-burgundy-bg: $burgundy-50;
+$tag-navy-bg: $navy-150;
+$tag-yellow-bg: $yellow-100;
+$tag-black-bg: $black-20;
+$tag-orange-bg: $orange-100;            // Note: Assumed value
+$tag-purple-bg: $purple-100;            // Note: Assumed value
+$tag-pink-bg: $pink-100;                // Note: Assumed value
+$portal-badge-bg: $burgundy-400;
+$dropdown-menu-header-bg: $navy-50;
+$page-overlay: $transparent-black-25;
+$marketing-website-primary-button-bg: $burgundy-800;
+
+//======================================================================//
+
+// Content
+$white-text: $black-0;
+$secondary-button-text: $black-800;
+$shadow-button-text: $navy-400;
+$disabled-text: $black-200;
+$disabled-shadow-button-text: $navy-300;
+$regular-text: $black-600;
+$bold-text: $black-800;
+$description-text: $black-400;
+$table-header-text: $black-400;
+$error-text: $burgundy-400;
+$nav-text: $burgundy-50;
+$nav-disabled-text: $burgundy-100;
+$danger-text: $burgundy-400;
+$danger-disabled-text: $burgundy-100;
+$theme-text: $navy-200;
+$success-text: $green-200;
+$warning-text: $yellow-200;
+$loading-text: $blue-200;
+$email-theme-text: $burgundy-800;
+$placeholder-text: $black-200;
+$marketing-website-secondary-button-text: $burgundy-800;
+
+
+//======================================================================//
+
+
+// Strokes
+$focus-stroke: $navy-200;
+$secondary-button-stroke: $black-200;
+$divider-stroke: $black-50;
+$checkbox-and-radio-button-stroke: $black-200;
+$surface-stroke: $black-50;
+$error-stoke: $burgundy-400;
+$theme-stroke: $navy-200;
+$text-field-stroke: $black-50;
+$nav-focus-stroke: $black-0;
+$primary-button-focus-stoke: $black-800;
+$marketing-website-secondary-button-stroke: $burgundy-800;
+$success-stroke: $green-200;
+
+
+//======================================================================//
+
+
+// Shapes
+$success-stroke: $green-200;
+$active-shape: $green-200;
+$pending-shape: $yellow-200;
+$inactive-shape: $black-100;
+$error-shape: $burgundy-200;
+$column-header-no-sorting-shape: $black-200;
+$column-header-sorting-shape: $blue-200;
+$scrollbar-shape: $black-100;
+$nav-item-active-shape: $burgundy-100;
+$theme-shape: $navy-200;
+$progress-bar-not-finished-shape: $black-100;
+$toggle-shape: $navy-150;
+$toggle-off-shape: $black-200;
+$divider-shape: $black-50;
+$nav-notification-shape: $navy-0;

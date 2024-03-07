@@ -1,0 +1,327 @@
+@import '../theme.scss';
+
+.button {
+    // font-family: Open Sans;
+    padding: 9px 10px 9px 9.5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    box-shadow: none;
+    border: 0;
+    gap: 8px;
+
+
+    &.primary {
+        border: 2px solid #3C418C !important;
+        background-color: #3C418C;
+        color: #FFFFFF !important;
+
+        &:hover {
+            border: 2px solid #0A1063 !important;
+            background-color: #0A1063;
+            color: #FFFFFF !important;
+        }
+
+        &:active {
+            border: 2px solid #0A1063 !important;
+            background-color: #0A1063;
+            color: #FFFFFF !important;
+        }
+
+        &:focus {
+            border: 2px solid #0D122A !important;
+            background-color: #3C418C;
+            color: #FFFFFF !important;
+        }
+
+        &:disabled {
+            border: 2px solid #F0F0F1 !important;
+            background-color: #F0F0F1;
+            color: #989AA4 !important;
+        }
+    }
+
+    &.secondary {
+        border: 1px solid #989AA4 !important;
+        background-color: #FFFFFF;
+        color: #0D122A !important;
+
+        &:hover {
+            border: 1px solid #989AA4 !important;
+            background-color: #EFF0FF;
+            color: #0D122A !important;
+        }
+
+        &:active {
+            border: 1px solid #989AA4 !important;
+            background-color: #E4E6FF;
+            color: #0D122A !important;
+        }
+
+        &:focus {
+            border: 2px solid #5E66DA !important;
+            background-color: #FFFFFF;
+            color: #0D122A !important;
+        }
+
+        &:disabled {
+            border: 1px solid #989AA4 !important;
+            background-color: #F0F0F1;
+            color: #888BB9 !important;
+        }
+
+    }
+
+    &.shadow {
+        border: 2px solid transparent !important;
+        background-color: transparent;
+        color: #3C418C !important;
+
+        &:hover {
+            border: 2px solid #EFF0FF !important;
+            background-color: #EFF0FF;
+            color: #3C418C !important;
+        }
+
+        &:active {
+            border: 2px solid #E4E6FF !important;
+            background-color: #E4E6FF;
+            color: #3C418C !important;
+        }
+
+        &:focus {
+            border: 2px solid #5E66DA !important;
+            background-color: transparent;
+            color: #3C418C !important;
+        }
+
+        &:disabled {
+            border: 2px solid transparent !important;
+            background-color: transparent;
+            color: #888BB9 !important;
+        }
+    }
+
+    &.danger {
+        border: 2px solid #A00142 !important;
+        background-color: #A00142;
+        color: #FFFFFF !important;
+
+        &:hover {
+            border: 2px solid #800035 !important;
+            background-color: #800035;
+            color: #FFFFFF !important;
+        }
+
+        &:active {
+            border: 2px solid #5F0028 !important;
+            background-color: #5F0028;
+            color: #FFFFFF !important;
+        }
+
+        &:focus {
+            border: 2px solid #5E66DA !important;
+            background-color: #A00142;
+            color: #FFFFFF !important;
+        }
+
+        &:disabled {
+            border: 2px solid #F0F0F1 !important;
+            background-color: #F0F0F1;
+            color: #989AA4 !important;
+        }
+    }
+
+    &.transparent {
+        border: 1px solid #FFFFFF !important;
+        background-color: rgba(255, 255, 255, 0.30);
+        color: #FFFFFF !important;
+
+        &:hover {
+            border: 1px solid #FFFFFF !important;
+            background-color: rgba(255, 255, 255, 0.20);
+            color: #FFFFFF !important;
+            box-shadow: 0px 4px 8px 0px rgba(13, 18, 42, 0.12);
+        }
+
+        &:active {
+            border: 1px solid #FFFFFF !important;
+            background-color: rgba(255, 255, 255, 0.10);
+            color: #FFFFFF !important;
+        }
+
+        &:focus {
+            border: 2px solid #FFFFFF !important;
+            background-color: rgba(255, 255, 255, 0.30);
+            color: #FFFFFF !important;
+        }
+
+        &:disabled {
+            border: 1px solid rgba(255, 255, 255, 0.50) !important;
+            background: rgba(255, 255, 255, 0.30);
+            color: #FFFFFF80 !important;
+
+        }
+
+    }
+
+    &.danger-shadow {
+        border: 2px solid transparent !important;
+        background-color: transparent;
+        color: #A00142 !important;
+
+        &:hover {
+            border: 2px solid #EFF0FF !important;
+            background-color: #EFF0FF;
+            color: #A00142 !important;
+        }
+
+        &:active {
+            border: 2px solid #E4E6FF !important;
+            background-color: #E4E6FF;
+            color: #A00142 !important;
+        }
+
+        &:focus {
+            border: 2px solid #5E66DA !important;
+            background-color: transparent;
+            color: #A00142 !important;
+        }
+
+        &:disabled {
+            border: 2px solid transparent !important;
+            background-color: transparent;
+            color: #D8A9BC !important;
+        }
+    }
+
+    &.danger-secondary {
+        border: 1px solid #989AA4 !important;
+        background-color: #FFFFFF;
+        color: #A00142 !important;
+
+        &:hover {
+            border: 1px solid #989AA4 !important;
+            background-color: #EFF0FF;
+            color: #A00142 !important;
+        }
+
+        &:active {
+            border: 1px solid #989AA4 !important;
+            background-color: #E4E6FF;
+            color: #A00142 !important;
+        }
+
+        &:focus {
+            border: 2px solid #5E66DA !important;
+            background-color: #FFFFFF;
+            color: #A00142 !important;
+        }
+
+        &:disabled {
+            border: 1px solid #989AA4 !important;
+            background-color: #F0F0F1;
+            color: #D8A9BC !important;
+        }
+
+    }
+
+    &.default {
+        padding: 9px 10px 9px 9.5px;
+    }
+
+    &.spacious {
+        padding: 13px 14px 13px 13.5px;
+    }
+
+    &.compact {
+        padding: 5px 6px 5px 5.5px;
+    }
+
+    &.float {
+        box-shadow: 0px 24px 40px -1px rgba(13, 18, 42, 0.16);
+    }
+}
+
+.marketSitebutton{
+    padding: 12px 24px;
+    border-radius: 100px ;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    box-shadow: none;
+    gap: 8px;
+
+    &.primary {
+        border: 2px solid #5F0028 !important;
+        background-color: #5F0028;
+        color: #FFFFFF !important;
+
+        &:hover {
+            border: 2px solid #A00142 !important;
+            background-color: #A00142;
+            color: #FFFFFF !important;
+        }
+
+        &:active {
+            border: 2px solid #DF0C64 !important;
+            background-color: #DF0C64;
+            color: #FFFFFF !important;
+        }
+
+        &:focus {
+            border: 2px solid #5E66DA !important;
+            background-color: #5F0028;
+            color: #FFFFFF !important;
+        }
+
+        &:disabled {
+            border: 2px solid #F0F0F1 !important;
+            background-color: #F0F0F1;
+            color: #989AA4;
+        }
+
+        background-color: #5F0028;
+    }
+
+    &.secondary {
+        border: 1px solid #5F0028 !important;
+        background-color: #FFF;
+        color: #5F0028 !important;
+
+        &:hover {
+            border: 1px solid #5F0028 !important;
+            background-color: #EFF0FF;
+            color: #5F0028 !important;
+        }
+
+        &:active {
+            border: 1px solid #5F0028 !important;
+            background-color: #E4E6FF;
+            color: #5F0028 !important;
+        }
+
+        &:focus {
+            border: 2px solid #5E66DA !important;
+            background-color: #FFFFFF;
+            color: #5F0028 !important;
+        }
+
+        &:disabled {
+            border: 1px solid #989AA4 !important;
+            background-color: #F0F0F1;
+            color: #989AA4 !important;
+        }
+
+    }
+}

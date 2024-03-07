@@ -1,0 +1,176 @@
+.tags{
+    width: auto;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    padding: 3px 8px;
+    gap: 8px;
+    color: #292B37;
+
+    &.order-placed{
+        background-color: #F0F0F1;
+    }
+    &.assessment-sent{
+        background-color: #FFE3C9;
+    }
+    &.pending-QA-approval{
+        background-color: #E4E6FF;
+    }
+    &.registered{
+        background-color: #F0E4FF;
+    }
+    &.assessment-approved{
+        background-color: #FFDFDF;
+    }
+    &.assessment-in-progress{
+        background-color: #FFEBF3;
+    }
+    &.assessment-submitted{
+        background-color: #CCFBD0;
+    }
+    &.E-Learning-in-progress{
+        background-color: #FFFACC;
+    }
+    &.E-Learning-completed{
+        background-color: #E8F7FD;
+    }
+    &.draft{
+        background-color: #FFE3C9;
+    }
+    &.scheduled{
+        background-color: #E8F7FD;
+    }
+    &.registration-in-progress{
+        background-color: #FFFACC;
+    }
+    &.registration-full{
+        background-color: #E4E6FF;
+    }
+    &.registration-closed{
+        background-color: #FFEBF3;
+    }
+    &.event-in-progress{
+        background-color: #CCFBD0;
+    }
+    &.event-ended{
+        background-color: #E8F7FD;
+    }
+    &.canceled{
+     background-color: #F0F0F1;   
+    }
+    &.published{
+        background-color: #FFDFDF;
+    }
+    &.registration-completed{
+        background-color: #E4E6FF;
+    }
+
+    &.assessments{
+        background-color: #CCFBD0;
+    }
+    &.enterprises{
+        background-color: #CCFBD0;
+    }
+    &.independent-respondents{
+        background-color: #E8F7FD;
+    }
+    &.e-learning{
+        background-color: #FFEBF3;
+    }
+    &.seminars{
+        background-color: #E4E6FF;
+    }
+    &.QA-workshops{
+        background-color: #FFFACC;
+    }
+    &.IDI-staff{
+        background-color: #F0F0F1;
+    }
+    &.enterpirse-admins{
+        background-color: #FFE3C9;
+    }
+    &.others{
+        background-color: #F0F0F1;
+    }
+    &.paying-by-invoice{
+        background-color: #FFEBF3;
+    }
+    &.purchase-order{
+        background-color: #FFFACC;
+    }
+    &.request-submitted{
+        background-color: #FFE3C9;
+    }
+    &.request-approved{
+        background-color: #E8F7FD;
+    }
+    &.payment-pending{
+        background-color: #FFFACC;
+    }
+    &.paid{
+        background-color: #CCFBD0;
+    }
+    &.rejected{
+        background-color: #FFEBF3;
+    }
+    &.under-review{
+        background-color: #F0F0F1;
+    }
+    &.pending{
+        background-color: #FFFACC;
+    }
+    &.approved{
+        background-color: #CCFBD0;
+    }
+    &.rejected{
+        background-color: #FFEBF3;
+    }
+    &.pending-approval{
+        background-color: #FFFACC;
+    }
+    &.card{
+        background-color: #CCFBD0;
+    }
+    &.paying-by-invoice{
+        background-color: #FFEBF3;
+    }
+    &.purchase-order{
+        background-color: #FFFACC;
+    }
+    &.not-set-up{
+        background-color: #F0F0F1;
+    }
+    &.not-registered{
+        background-color: #DEDFE1;
+    }
+    &.registered{
+        background-color: #CCFBD0;
+    }
+    &.admin{
+        background-color: #CCFBD0;
+    }
+    &.Staff{
+        background-color: #FFFACC;
+    }
+    &.active{
+        background-color: #CCFBD0;
+    }
+    &.pending-invite{
+        background-color: #FFFACC;
+    }
+    &.inactive{
+        background-color: #F0F0F1;
+    }
+    &.invite-revoked{
+        background-color: #FFDFDF;
+    }
+    &.invite-expired{
+        background-color: #F0E4FF;
+    }
+
+
+}
