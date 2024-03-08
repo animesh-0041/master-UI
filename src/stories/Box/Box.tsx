@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect } from "react";
+import React, { useReducer, useEffect, useState } from "react";
 import Text from "../Text/Text";
 // import "./styles.scss";
 
@@ -12,7 +12,7 @@ export type BoxProps = {
   label?: string;
   tooltipText?: string;
   backgroundColor?: string;
-  color?: string;
+  color?: string|string[];
   border?: string;
   marketSite?: boolean;
   float?: boolean;
@@ -110,60 +110,53 @@ export default function Box(props: any) {
     templateColumns,
     ...rest
   } = props;
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [executionTime, setExecutionTime] = useState<number | null>(null);
+
+  const getData = (ele: any) => {
+    if (typeof ele === 'string') {
+      return ele;
+
+    } else if (Array.isArray(ele) && ele.length > 0) {
+      const windowWidth = window.innerWidth;
+      if (windowWidth <= 768) {
+        return ele[0]; // Color for small screens
+      } else if (windowWidth <= 1024) {
+        return ele[1]; // Color for medium screens
+      } else {
+        return ele[2]; // Color for large screens
+      }
+    } else {
+      // Return default color if color is not provided or invalid
+      return 'black';
+    }
+  };
+
+  useEffect(() => {
+    const startTime = performance.now();
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    const endTime = performance.now()
+    setExecutionTime(endTime-startTime)
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
+console.log(executionTime);
 
   return (
     <div
       style={{
-        width: width || w,
-        height: height || h,
-        margin: margin || m,
-        color: color || c,
-        border: border || b,
-        padding: padding || p,
-        boxSizing: boxSizing,
-        overflow: overflow,
-        clip: clip,
-        position: position,
-        zIndex: zIndex,
-        font: font,
-        fontSize: fontSize || size,
-        fontFamily: fontFamily,
-        fontVariant: fontVariant,
-        fontWeight: fontWeight,
-        lineHeight: lineHeight,
-        textAlign: textAlign,
-        textDecoration: textDecoration,
-        textIndent: textIndent,
-        textTransform: textTransform,
-        letterSpacing: letterSpacing,
-        wordSpacing: wordSpacing,
-        whiteSpace: whiteSpace,
-        background: background || bg,
-        backgroundImage: backgroundImage || bgImage,
-        backgroundRepeat: backgroundRepeat,
-        bgPosition: bgPosition,
-        backgroundPosition: backgroundPosition,
-        lsImage: lsImage,
-        listStyleImage: listStyleImage,
-        display: display || d,
-        visibility: visibility || v,
-        float: float,
-        clear: clear,
-        flex: flex || f,
-        fGrow: fGrow,
-        fDirection: fDirection,
-        fWrap: fWrap,
-        justifyContent: justifyContent || jc,
-        alignItems: alignItems || ai,
-        alignContent: alignContent || ac,
-        alignSelf: alignSelf || as,
-        order: order || o,
-        grid: grid || g,
-        gridArea: gridArea || gArea,
-        gridTemplate: gridTemplate || gTemplate,
-        templateColumns: templateColumns,
+        color:getData(color),
+        backgroundColor: getData(bgColor)
       }}
     >
+      {executionTime && <p>Execution time: {executionTime} milliseconds</p>}
       {children}
     </div>
 );

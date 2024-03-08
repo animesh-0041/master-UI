@@ -1,5 +1,6 @@
 import React, { useReducer, useEffect } from "react";
 import { styleProperty } from "../store";
+import Box from "../Box/Box";
 // import "./styles.scss";
 
 export type BoxProps = {
@@ -165,6 +166,7 @@ export default function Text(props: any) {
       }}
     >
       {children}
+      <Box bgColor={['red','blue']} color={['green','red','white']}>Animesh</Box>
     </div>
   );
 }

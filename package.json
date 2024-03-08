@@ -27,6 +27,7 @@
     "react-dom": "^18",
     "sass": "^1.69.7",
     "strip-ansi-cjs": "latest",
+    "styled-components": "^6.1.8",
     "web-vitals": "^2.1.4",
     "yarn": "^1.22.21"
   },
